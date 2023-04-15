@@ -1,0 +1,12 @@
+.open_comments {
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: center;
+  
+}
+
+.open_comments_span {
+  color: #c4c4c4;
+  line-height: 14px;
+  padding-left: 6px;
+}

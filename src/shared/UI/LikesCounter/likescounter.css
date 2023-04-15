@@ -1,0 +1,41 @@
+.likes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.likes_img {
+
+}
+
+#rotate {
+  transform: rotate(180deg);
+}
+
+.likes_span {
+  color: #c4c4c4;
+  padding: 0 4px;
+}
+
+.likes_svg_path_plus, .likes_svg_path_minus {
+  transition: all .1s;
+  position: relative;
+  z-index: 1;
+}
+
+.likes_svg_path_plus:active, .likes_svg_path_plus:hover {
+  fill: #A4CC33;
+}
+
+.likes_svg_path_minus:active, .likes_svg_path_minus:hover {
+  fill: #CC3361;
+}
+
+@media (min-width:1024px) {
+  .likes {
+    flex-direction: column;
+  }
+
+
+
+}

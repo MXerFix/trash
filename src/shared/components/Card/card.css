@@ -1,0 +1,54 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.post_link::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+
+
+
+@media (min-width:1024px){
+  .card {
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 0;
+    margin: 0;
+    padding: 20px 40px;
+    transition: all .3s;
+  }
+
+  .card:hover {
+    box-shadow: inset 0px 0px 0px 1px #d9d9d9;
+  }
+
+  .card:hover .post_link h3 {
+    color:orange;
+  }
+
+
+  .card__info_title {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .card__info_title_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+}

@@ -1,0 +1,12 @@
+.cardslist {
+
+}
+
+@media (min-width:1024px) {
+  
+  .cardslist {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px 0;
+  }
+}  
